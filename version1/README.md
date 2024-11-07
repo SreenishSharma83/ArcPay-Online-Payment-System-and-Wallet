@@ -1,74 +1,71 @@
-# ArcPay - MERN Online Payment & Wallet System
+# Wallet Application
+![image](./frontend/src/assets/gitAsset.png "Logo Title Text 1")
 
-ArcPay is a secure, real-time online payment and wallet system built with the MERN stack. Designed for seamless experiences for both users and admins, ArcPay provides a robust solution for transaction management, fund deposits, and comprehensive security via JWT authentication.
-
-## Table of Contents
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Installation](#installation)
-
-## Features
-- **User Registration and Authentication**: Secure login and signup with JWT and password encryption.
-- **Separate Interfaces**: User and Admin dashboards designed with Ant Design and Tailwind CSS.
-- **Transaction Management**: Users can transfer funds and request amounts from other users.
-- **Deposit Funds**: Integrated with Stripe for seamless deposits.
-- **Real-Time Updates**: Reflects CRUD operations instantly for both users and admins.
-- **Admin Controls**: Admins can approve or reject account access requests and manage user accounts.
-- **Data Integrity and Security**: Uses MongoDB session handling for safe transactions.
+The Wallet Application is a full-stack web application built using the **MERN** stack (MongoDB, Express.js, React.js, Node.js) that allows users send money, request money, add balance, accept payment, accept payment requets. It provides a user-friendly interface for organizing transactions and gaining insights into spending habits.
 
 ## Technologies Used
-*Frontend*:  
-- React.js (with Vite for fast bundling)
-- Tailwind CSS
-- Ant Design for UI components
-- Redux Toolkit for state management
 
-*Backend*:  
-- Node.js
-- Express.js
-- MongoDB Atlas with Mongoose
-- JWT for authentication
-- Stripe for payment processing
+**Front-end:** The user interface is developed using React.js initialized using vite, a popular JavaScript library for building dynamic web applications.
+for front end data management **redux-toolkit** is also used.
 
-*Other Tools*:  
-- GitHub for version control
-- Deployment-ready
+**Back-end:** The server-side of the application is built with **Node.js and Express.js**, providing a scalable and robust foundation.
 
-## Installation
+**Database:** **MongoDB** is utilized as the NoSQL database to store and retrieve financial data efficiently.
 
-### Prerequisites
-- Node.js (v14 or higher)
-- MongoDB Atlas account
-- Stripe API keys
+**API Integration:** used **cloudinary** service is also used to manage user media's
 
-### Steps to Run
+## Installation and Usage
 
-#### 1. Clone the Repository
-bash
-git clone https://github.com/sreenishsharma83/ArcPay-Online-Payment-System-and-Wallet.git
-cd version1
-2. Backend Setup
-Navigate to the backend directory:
-bash
+To install and run the Wallet Application locally, follow these steps:
+
+### Step 1: Clone the repository
+
+```
+git clone <repositoru url>
+```
+
+### Step 2: Install dependencies
+
+Navigate to the project root and install the necessary dependencies for the project
+
+```
+npm install 
+
+cd frontend
+npm install
+
 cd backend
-Install dependencies:
-bash
 npm install
-Create a .env file with the following configuration:
-bash
-JWT_SECRET=your_jwt_secret
-MONGODB_URI=your_mongodb_uri
-STRIPE_SECRET_KEY=your_stripe_secret_key
-Start the backend server:
-bash
-npm start
-3. Frontend Setup
-Navigate to the frontend directory:
-bash
-cd ../frontend
-Install dependencies:
-bash
-npm install
-Start the frontend server:
-bash
+```
+
+after installation navigate to root and run:
+
+```
 npm run dev
+```
+
+### Step 3: Configure the environment variables
+
+ - create `.env` in root and add following variables
+
+```
+MONGO_URI=<your-mongo-uri>
+JWT_SECRET=<jwt-secret>
+STRIPE_SECRET_KEY=your_stripe_secret_key
+```
+
+## Features
+ - user login
+ - user register
+ - user logout
+ - user dashboard
+ - profile update
+ - send money
+ - receive money
+ - money request
+ - view send transactions
+ - view received transactions
+ - view money requests send from other users
+ - accept money request and pay amount
+ - add balance to our account
+ - verify user after registration (ADMIN)
