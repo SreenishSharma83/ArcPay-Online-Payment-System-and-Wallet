@@ -1,6 +1,6 @@
 # ArcPay-Online-Payment-System-and-Wallet
 
-The BreadcrumbsArcPay-Online-Payment-System-and-Wallet Application is a full-stack web application built using the **MERN** stack (MongoDB, Express.js, React.js, Node.js) that allows users send money, request money, add balance, accept payment, accept payment requets. It provides a user-friendly interface for organizing transactions and gaining insights into spending habits.
+The ArcPay-Online-Payment-System-and-Wallet Application is a full-stack web application built using the **MERN** stack (MongoDB, Express.js, React.js, Node.js) that allows users send money, request money, add balance, accept payment, accept payment requets. It provides a user-friendly interface for organizing transactions and gaining insights into spending habits.
 
 ## Technologies Used
 
